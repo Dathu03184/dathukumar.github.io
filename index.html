@@ -1,465 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lekkala Dattu Kumar | AI & Data Science Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:#fff;
-overflow-x:hidden;
-}
-
-header{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:rgba(15,23,42,.95);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-.logo{
-font-size:28px;
-font-weight:700;
-color:#10b981;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#10b981;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:120px 8%;
-}
-
-.hero-content{
-max-width:650px;
-}
-
-.hero-content h3{
-font-size:24px;
-color:#10b981;
-}
-
-.hero-content h1{
-font-size:70px;
-line-height:1.1;
-margin:10px 0;
-}
-
-.hero-content h2{
-font-size:28px;
-color:#cbd5e1;
-margin-bottom:20px;
-}
-
-.hero-content p{
-font-size:18px;
-line-height:1.8;
-color:#cbd5e1;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:#10b981;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:600;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-5px);
-box-shadow:0 0 25px #10b981;
-}
-
-.hero-image img{
-width:380px;
-height:380px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #10b981;
-box-shadow:0 0 50px rgba(16,185,129,.8);
-}
-
-section{
-padding:90px 8%;
-}
-
-.section-title{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-color:#10b981;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-box-shadow:0 8px 20px rgba(0,0,0,.3);
-}
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
-
-.skill{
-background:#1e293b;
-padding:20px;
-text-align:center;
-border-radius:15px;
-transition:.3s;
-font-weight:500;
-}
-
-.skill:hover{
-background:#10b981;
-transform:translateY(-8px);
-}
-
-.education-grid,
-.project-grid,
-.cert-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
-}
-
-.edu-card,
-.project-card,
-.cert-card{
-background:#1e293b;
-padding:25px;
-border-radius:20px;
-transition:.3s;
-}
-
-.edu-card:hover,
-.project-card:hover,
-.cert-card:hover{
-transform:translateY(-10px);
-}
-
-.project-card h3,
-.edu-card h3{
-color:#10b981;
-margin-bottom:10px;
-}
-
-.contact{
-text-align:center;
-}
-
-.contact p{
-font-size:20px;
-margin:15px 0;
-}
-
-footer{
-background:#111827;
-text-align:center;
-padding:25px;
-margin-top:50px;
-}
-
-@media(max-width:900px){
-
-.hero{
-flex-direction:column;
-text-align:center;
-}
-
-.hero-content h1{
-font-size:45px;
-}
-
-.hero-image{
-margin-top:40px;
-}
-
-.hero-image img{
-width:280px;
-height:280px;
-}
-
-nav{
-display:none;
-}
-
-}
-
-</style>
-
+    <title>Lekkala Dattu Kumar Portfolio</title>
 </head>
 <body>
 
-<header>
-
-<div class="logo">LD</div>
-
-<nav>
-<a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h3>Hello, I'm</h3>
-
-<h1>Lekkala Dattu Kumar</h1>
-
-<h2>AI & Data Science Engineer</h2>
-
-<p>
-Highly motivated Artificial Intelligence and Data Science student
-with strong foundations in Programming, Machine Learning,
-Deep Learning, Computer Vision and Software Development.
-Passionate about building intelligent solutions for healthcare
-and automation.
-</p>
-
-<a href="#contact" class="btn">Contact Me</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="profile.jpg" alt="Profile Photo">
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="card">
-
-<p>
-I am pursuing B.Tech in Artificial Intelligence and Data Science at
-SIMATS School of Engineering, Chennai. My interests include
-Artificial Intelligence, Machine Learning, Deep Learning,
-Computer Vision and Software Development. I enjoy solving
-real-world problems through innovative technologies.
-</p>
-
-</div>
-
-</section>
-
-<section id="education">
-
-<h2 class="section-title">Education</h2>
-
-<div class="education-grid">
-
-<div class="edu-card">
-<h3>B.Tech – AI & DS</h3>
-<p>SIMATS School of Engineering</p>
-<p>2023 – 2027</p>
-<p>CGPA: 9.0 / 10</p>
-</div>
-
-<div class="edu-card">
-<h3>Intermediate (+12)</h3>
-<p>Sri Pratibha Junior College</p>
-<p>2021 – 2023</p>
-<p>97%</p>
-</div>
-
-<div class="edu-card">
-<h3>SSC</h3>
-<p>ZPHS Pedairlapadu</p>
-<p>2021</p>
-<p>99%</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="skills">
-
-<h2 class="section-title">Technical Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill">Python</div>
-<div class="skill">Java</div>
-<div class="skill">C</div>
-<div class="skill">C++</div>
-<div class="skill">SQL</div>
-<div class="skill">Machine Learning</div>
-<div class="skill">Deep Learning</div>
-<div class="skill">Computer Vision</div>
-<div class="skill">Artificial Intelligence</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Linux</div>
-<div class="skill">SwiftUI</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="section-title">Projects</h2>
-
-<div class="project-grid">
-
-<div class="project-card">
-
-<h3>NeuroPredict – Early Detection, Better Care</h3>
-
-<p>
-AI-based healthcare application for early prediction of neurological
-conditions using Machine Learning, Deep Learning and Computer Vision.
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Smart Lighting System</h3>
-
-<p>
-Automated lighting system using motion sensors,
-sound sensors and remote sensors to improve
-energy efficiency and user convenience.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="certifications">
-
-<h2 class="section-title">Certifications</h2>
-
-<div class="cert-grid">
-
-<div class="cert-card">Oracle Certified Professional: Java SE 11 Developer</div>
-
-<div class="cert-card">Oracle Database SQL Certified Specialist</div>
-
-<div class="cert-card">OCI 2025 Generative AI Professional</div>
-
-<div class="cert-card">OCI 2025 Data Science Professional</div>
-
-<div class="cert-card">Human Computer Interaction</div>
-
-<div class="cert-card">Management Information System</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Internship</h2>
-
-<div class="card">
-
-<h3 style="color:#10b981;">Wearable MEMS Private Limited</h3>
-
-<p>
-Completed Industrial Internship and gained practical exposure
-to real-world technologies, teamwork and project development.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Achievements</h2>
-
-<div class="card">
-
-<ul>
-<li>CGPA 9.0 / 10</li>
-<li>97% in Intermediate</li>
-<li>99% in SSC</li>
-<li>Multiple Oracle Certifications</li>
-<li>Developed NeuroPredict Healthcare Application</li>
-</ul>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="section-title">Contact</h2>
-
-<div class="card contact">
-
-<p>📧 lekkaladathukumar03184@gmail.com</p>
-
-<p>📱 +91 9494813811</p>
-
-<p>🎓 B.Tech AI & DS | SIMATS</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 Lekkala Dattu Kumar | AI & Data Science Portfolio</p>
-
-</footer>
+    <h1>Lekkala Dattu Kumar</h1>
+    <h2>B.Tech Student - CSE (AI & DS)</h2>
+
+    <h3>About Me</h3>
+    <p>
+        I am a B.Tech student specializing in Computer Science and Engineering
+        (Artificial Intelligence & Data Science) at Saveetha Institute of Medical
+        and Technical Sciences. I am passionate about Artificial Intelligence,
+        Machine Learning, Deep Learning, Computer Vision, and Software Development.
+    </p>
+
+    <h3>Education</h3>
+    <p>
+        <strong>Degree:</strong> B.Tech - CSE (AI & DS)<br>
+        <strong>College:</strong> Saveetha Institute of Medical and Technical Sciences<br>
+        <strong>Graduation Year:</strong> 2027
+    </p>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Computer Vision</li>
+        <li>Artificial Intelligence</li>
+        <li>Data Science</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+        <li>
+            <strong>NeuroPredict - Stroke Detection Using CT Brain Images</strong><br>
+            AI-based system for stroke detection and prediction using CT brain images.
+        </li>
+        <br>
+        <li>
+            <strong>Smart Lighting System</strong><br>
+            Intelligent lighting system using remote sensors, sound detection,
+            and motion sensors for energy efficiency.
+        </li>
+    </ul>
+
+    <h3>Certifications</h3>
+    <ul>
+        <li>Human Computer Interaction (NPTEL)</li>
+        <li>Management Information System (NPTEL)</li>
+        <li>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</li>
+        <li>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</li>
+        <li>Oracle Certified Professional: Java SE 11 Developer</li>
+        <li>Oracle Database SQL Certified Specialist</li>
+    </ul>
+
+    <h3>Internship</h3>
+    <p>
+        <strong>Wearable MEMS Private Limited</strong><br>
+        Industrial Internship - Gained practical exposure to industry-oriented
+        technologies and project development processes.
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+        <strong>Email:</strong> lekkaladathukumar03184@gmail.com<br>
+        <strong>Phone:</strong> 9494813811
+    </p>
 
 </body>
 </html>
